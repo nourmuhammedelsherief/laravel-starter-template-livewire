@@ -4,6 +4,7 @@ namespace App\Repositories;
 use App\Models\Task;
 use App\Jobs\ProcessTask;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Pagination\Paginator;
 
 class TaskRepository
 {
@@ -15,7 +16,9 @@ class TaskRepository
         }
 
         // 2. الحصول على رقم الصفحة الحالية ديناميكياً
-        $page = request('page', 1);
+        // $page = request('page', 1);
+        $page = Paginator::resolveCurrentPage() ?: 1;
+
 
         // 3. بناء مفتاح فريد لكل صفحة ولكل عدد عناصر (Per Page)
         $cacheKey = "tasks:list:p{$page}:limit:{$perPage}";
