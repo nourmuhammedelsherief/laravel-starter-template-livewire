@@ -23,6 +23,9 @@ class ProcessTask implements ShouldQueue
      */
     public function handle(): void
     {
+        sleep(2); 
         logger("Processing task: " . $this->task->title);
+        event(new \App\Events\TaskProcessed($this->task));
+
     }
 }

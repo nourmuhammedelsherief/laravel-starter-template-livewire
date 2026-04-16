@@ -75,3 +75,16 @@
         </flux:table>
     </flux:card>
 </div>
+<script shadow>
+    document.addEventListener('livewire:init', () => {
+        Echo.channel('tasks-channel')
+            .listen('TaskProcessed', (e) => {
+                // إظهار التنبيه باستخدام Flux Toast اللي عندك
+                Flux.toast({
+                    variant: 'success',
+                    heading: 'تحديث لحظي',
+                    text: 'تمت معالجة المهمة: ' + e.title
+                });
+            });
+    });
+</script>

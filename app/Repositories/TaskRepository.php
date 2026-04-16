@@ -98,9 +98,6 @@ class TaskRepository
 
     public function findById($id)
     {
-        // يمكنك أيضاً عمل كاش لكل مهمة على حدة إذا أردت
-        return Cache::remember("task:{$id}", now()->addDay(), function() use ($id) {
-            return Task::findOrFail($id);
-        });
+        return Task::findOrFail($id);
     }
 }
