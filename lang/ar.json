@@ -29,5 +29,22 @@
     "Title": "عنوان المهمة",
     "Track and manage your daily tasks from here.": "تابع وأنجز مهامك اليومية من هنا.",
     "Update Task": "تحديث المهمة",
-    "Write a detailed description...": "اكتب وصفاً تفصيلياً..."
+    "Write a detailed description...": "اكتب وصفاً تفصيلياً...",
+    "Add Employee": "إضافة موظف",
+    
+    "No employees found yet.": "لم يتم العثور على أي موظفين حالياً.",
+    "Save Employee": "حفظ الموظف",
+    "Search employees...": "ابحث عن الموظف...",
+    "Employee created": "تم إنشاء الموظف",
+    "Employee deleted successfully.": "تم حذف الموظف بنجاح.",
+    "Employee Management": "إدارة الموظفين",
+    "Employee saved successfully.": "تم حفظ الموظف بنجاح.",
+    "Employee updated": "تم تحديث الموظف",
+    "Employees": "الموظفين",
+    "Update Employee": "تحديث الموظف",
+    "Dashboard Analytics": "تحليلات لوحة التحكم",
+    "Track performance with real-time sales, users, and revenue trends.": "تتبع الأداء عبر اتجاهات المبيعات والمستخدمين والإيرادات بشكل فوري.",
+    "Sales Overview": "نظرة عامة على المبيعات",
+    "User Distribution": "توزيع المستخدمين",
+    "Monthly Revenue": "الإيرادات الشهرية"
 }
